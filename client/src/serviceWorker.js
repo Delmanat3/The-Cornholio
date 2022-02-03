@@ -22,7 +22,6 @@ const isLocalhost = Boolean(
 
 export function register(config) {
   if (
-    process.env.NODE_ENV === 'production' &&
     'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
 
@@ -59,7 +58,7 @@ export function register(config) {
 
 function registerValidSW(swUrl, config) {
   navigator.serviceWorker
-    .register(swUrl)
+    .register(swUrl,{ scope: "/" })
     .then(registration => {
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;

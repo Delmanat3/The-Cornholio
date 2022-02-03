@@ -3,6 +3,14 @@ import truck from "../img/truck.jpg";
 import cool from "../img/cool.jpg";
 import { Work } from "../works";
 
+import LazyLoad from 'react-lazyload';
+
+// @lazyload({
+//   height: 200,
+//   once: true,
+//   offset: 100
+// })
+
 export const Jumbo = () => {
 console.log(window.innerWidth)
 const [isDesktop, setDesktop] = React.useState(window.innerWidth > 1450);
@@ -19,6 +27,7 @@ React.useEffect(() => {
   console.log(process.env.PUBLIC_URL);
   return (
     <>
+    <LazyLoad>
       <div
         id="Bg1"
         style={{
@@ -57,6 +66,7 @@ React.useEffect(() => {
       <div id="Bg2" style={{ backgroundImage: `url(${cool})` }}>
         <Work />
       </div>
+      </LazyLoad>
     </>
   );
 };
