@@ -22,6 +22,7 @@ window.addEventListener("activate", function(event) {
           console.log("[ServiceWorker] Removing old cache shell", key);
           return caches.delete(key);
         }
+        return
       }));
     })
   );
