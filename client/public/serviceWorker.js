@@ -31,6 +31,7 @@ self.addEventListener("fetch", (event) => {
   console.log("[ServiceWorker] Fetch");
   event.respondWith(
     caches.match(event.request).then(function(response) {
+      console.log(response)
       return response || fetch(event.request);
     })
   );
