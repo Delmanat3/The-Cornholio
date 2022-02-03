@@ -16,7 +16,7 @@ console.log(window.innerWidth)
 const [isDesktop, setDesktop] = React.useState(window.innerWidth > 1450);
   
 const updateMedia = () => {
-  setDesktop(window.innerWidth > 1450);
+  setDesktop(window.innerWidth > 500);
 };
 
 React.useEffect(() => {

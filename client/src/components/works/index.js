@@ -6,10 +6,10 @@ import five from "../img/fiveStar.png";
 import feed from "../img/h2.avif"
 export const Work = () => {
   // 1323 x 1099
-  const [isDesktop, setDesktop] = React.useState(window.innerWidth > 1450);
+  const [isDesktop, setDesktop] = React.useState(window.innerWidth > 1000);
   
 const updateMedia = () => {
-  setDesktop(window.innerWidth > 1450);
+  setDesktop(window.innerWidth > 970);
 };
 
 React.useEffect(() => {
