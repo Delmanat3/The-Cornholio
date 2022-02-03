@@ -2,7 +2,7 @@ const cacheName = "kaldiPWA-v1";
 const filesToCache = ["index.html"];
 
 
-window.addEventListener("install", function(event) {
+self.addEventListener("install", function(event) {
   // Perform install steps
   console.log("[Servicework] Install");
   event.waitUntil(
@@ -13,7 +13,7 @@ window.addEventListener("install", function(event) {
   );
 });
 
-window.addEventListener("activate", function(event) {
+self.addEventListener("activate", function(event) {
   console.log("[Servicework] Activate");
   event.waitUntil(
     caches.keys().then(function(keyList) {
@@ -27,7 +27,7 @@ window.addEventListener("activate", function(event) {
   );
 });
 
-window.addEventListener("fetch", (event) => {
+self.addEventListener("fetch", (event) => {
   console.log("[ServiceWorker] Fetch");
   event.respondWith(
     caches.match(event.request).then(function(response) {
