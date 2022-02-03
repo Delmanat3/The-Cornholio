@@ -1,0 +1,23 @@
+{
+  "name": "the-cornholio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd client && npm start",
+    "install": " cd client && npm i",
+    "build": "cd client && npm run build"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Delmanat3/The-Cornholio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Delmanat3/The-Cornholio/issues"
+  },
+  "homepage": "https://github.com/Delmanat3/The-Cornholio#readme"
+}
