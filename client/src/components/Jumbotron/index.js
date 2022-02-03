@@ -1,6 +1,5 @@
 import React from "react";
 import truck from "../img/truck.jpg";
-import galaxy from "../img/galaxy.jpg";
 import cool from "../img/cool.jpg";
 import { Work } from "../works";
 
@@ -15,7 +14,7 @@ const updateMedia = () => {
 React.useEffect(() => {
   window.addEventListener("resize", updateMedia);
   return () => window.removeEventListener("resize", updateMedia);
-});    const isMobile=window.innerWidth < 1450
+});     
 
   console.log(process.env.PUBLIC_URL);
   return (

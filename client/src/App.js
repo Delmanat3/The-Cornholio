@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {Jumbo}from "./components/Jumbotron"
 import { Menu } from './components/SpeedDial';

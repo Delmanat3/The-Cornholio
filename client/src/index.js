@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import "./jass.css"
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

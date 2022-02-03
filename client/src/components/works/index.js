@@ -15,7 +15,7 @@ const updateMedia = () => {
 React.useEffect(() => {
   window.addEventListener("resize", updateMedia);
   return () => window.removeEventListener("resize", updateMedia);
-});    const isMobile=window.innerWidth < 1450
+});    
 
   return (
     <>
@@ -39,7 +39,7 @@ React.useEffect(() => {
         </div>
 {isDesktop ? (
   <div>
-          <img id="currency" src={cur}></img>
+          <img id="currency" src={cur} alt="project 1"></img>
         </div>
 ):(
 <div></div>
@@ -66,7 +66,7 @@ React.useEffect(() => {
         </div>
       {isDesktop ? (
   <div>
-          <img id="currency" src={pro}></img>
+          <img id="currency" src={pro} alt="project 1"></img>
         </div>
 ):(
 <div></div>
@@ -94,7 +94,7 @@ React.useEffect(() => {
         </div>
         {isDesktop ? (
   <div>
-          <img id="currency" src={feed}></img>
+          <img id="currency" src={feed} alt="project 1"></img>
         </div>
 ):(
 <div></div>
@@ -119,7 +119,7 @@ React.useEffect(() => {
         </div>
         {isDesktop ? (
   <div>
-          <img id="currency" src={five}></img>
+          <img id="currency" src={five} alt="project 1" ></img>
         </div>
 ):(
 <div></div>
@@ -145,7 +145,7 @@ React.useEffect(() => {
         </div>
         {isDesktop ? (
   <div>
-          <img id="currency" src={pro}></img>
+          <img id="currency" src={pro} alt="project 1"></img>
         </div>
 ):(
 <div></div>
