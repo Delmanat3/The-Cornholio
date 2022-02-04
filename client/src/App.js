@@ -17,6 +17,7 @@ if ('serviceWorker' in navigator) {
     <>
   <Jumbo/>
   <Menu/>
+  
   </>
   );
 }

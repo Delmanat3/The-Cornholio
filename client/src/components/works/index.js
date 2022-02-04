@@ -18,14 +18,11 @@ React.useEffect(() => {
 });    
 
   return (
+  <>
     <>
+    {isDesktop ? (
       <div id="workBox1">
-        <div
-          onClick={(e) => {
-            window.location = "http://cosmozcurrency.com/";
-          }}
-          id="item"
-        >
+        <div id="item">
           <div id="itemTitle">Cosmozcurrency</div>
           <br />
           <div id="itemDetail">
@@ -37,17 +34,70 @@ React.useEffect(() => {
              API/s=[ CoinGecko, NYtimes, marketaux ]<br/>
           </div>
         </div>
-{isDesktop ? (
+
   <div>
-          <img id="currency" src={cur} alt="project 1"></img>
+          <img 
+            onClick={(e) => {
+              window.location = "http://cosmozcurrency.com/";
+            }}
+          id="currency" src={cur} alt="project 1"></img>
+        </div>
+  </div>
+):(
+<>
+<div id="workBox1">
+        <div
+          onClick={(e) => {
+            window.location = "http://cosmozcurrency.com/";
+          }}
+          id="item"
+        >
+          <div id="itemTitle">CryptoCosmos</div>
+          <br />
+          <div id="itemDetail">
+          <strong>Technologies Used:</strong> <br/>
+             {/* Back-End=[ SQL, jQuery, Axios ]<br/> */}
+             Front-End=[ jQuery, Materialize ]<br/>
+             API/s=[ CoinGecko ]
+
+          </div>
+        </div>
+  </div>
+</>
+
+)}
+</>   
+      
+      <>
+{isDesktop ? (
+      <div id="workBox2">
+        <div
+        
+          id="item"
+        >
+          <div id="itemTitle">CryptoCosmos</div>
+          <br />
+          <div id="itemDetail">
+          <strong>Technologies Used:</strong> <br/>
+             {/* Back-End=[ SQL, jQuery, Axios ]<br/> */}
+             Front-End=[ jQuery, Materialize ]<br/>
+             API/s=[ CoinGecko ]
+
+          </div>
+        </div>
+      
+  <div>
+          <img 
+            onClick={(e) => {
+              window.location = "https://cole-cochran.github.io/crypto-cosmos/";
+            }}
+          
+          id="currency" src={pro} alt="project 1"></img>
+        </div>
         </div>
 ):(
-<div></div>
-)}
-        
-      </div>
-
-      <div id="workBox2">
+<>
+<div id="workBox2">
         <div
           onClick={(e) => {
             window.location = "https://cole-cochran.github.io/crypto-cosmos/";
@@ -64,20 +114,16 @@ React.useEffect(() => {
 
           </div>
         </div>
-      {isDesktop ? (
-  <div>
-          <img id="currency" src={pro} alt="project 1"></img>
-        </div>
-):(
-<div></div>
+  </div>
+</>
 )}
-      </div>
 
+      
+</>
+<>
+{isDesktop ? (
       <div id="workBox3">
         <div
-          onClick={(e) => {
-            window.location = "https://feed-your-lifestyle.herokuapp.com/";
-          }}
           id="item"
         >
           <div id="itemTitle">Feed Your Lifestyle</div>
@@ -92,20 +138,45 @@ React.useEffect(() => {
              API/s=[ EDAMAME, twitter v2 ]
           </div>
         </div>
-        {isDesktop ? (
+        
   <div>
-          <img id="currency" src={feed} alt="project 1"></img>
+          <img
+          
+          onClick={(e) => {
+            window.location = "https://feed-your-lifestyle.herokuapp.com/";
+          }}
+          id="currency" src={feed} alt="project 1"></img>
+        </div>
         </div>
 ):(
-<div></div>
-)}
-      </div>
-
-      <div id="workBox4">
+<>
+<div id="workBox3">
         <div
           onClick={(e) => {
-            window.location = "https://fivestardrinks.herokuapp.com/";
+            window.location = "https://feed-your-lifestyle.herokuapp.com/";
           }}
+          id="item"
+        >
+          <div id="itemTitle">CryptoCosmos</div>
+          <br />
+          <div id="itemDetail">
+          <strong>Technologies Used:</strong> <br/>
+             {/* Back-End=[ SQL, jQuery, Axios ]<br/> */}
+             Front-End=[ jQuery, Materialize ]<br/>
+             API/s=[ CoinGecko ]
+
+          </div>
+        </div>
+  </div>
+</>
+)}
+</>
+    
+<>
+{isDesktop ? (
+      <div id="workBox4">
+        <div
+        
           id="item"
         >
           <div id="itemTitle">fiveStar</div>
@@ -117,19 +188,69 @@ React.useEffect(() => {
              Front-End=[ React, ApolloClient, MUI ]
           </div>
         </div>
-        {isDesktop ? (
+       
   <div>
-          <img id="currency" src={five} alt="project 1" ></img>
+          <img 
+           onClick={(e) => {
+            window.location = "https://fivestardrinks.herokuapp.com/";
+          }}
+          id="currency" src={five} alt="project 1" ></img>
+        </div>
         </div>
 ):(
-<div></div>
+  <>
+  <div id="workBox4">
+  <div
+    onClick={(e) => {
+      window.location = "https://fivestardrinks.herokuapp.com/";
+    }}
+    id="item"
+  >
+    <div id="itemTitle">fiveStar</div>
+    <br />
+    <div id="itemDetail">
+      
+      <strong>Technologies Used:</strong> <br/>
+       Back-End=[ MongoDb, Mongoose, GraphQl, Apollo, Express.js, Axios ]<br/>
+       Front-End=[ React, ApolloClient, MUI ]
+    </div>
+  </div>
+  </div>
+  </>
 )}
-      </div>
-
+</>
+    <>
+    {isDesktop ? (
       <div id="workBox5">
         <div
+         
+          id="item"
+        >
+          <div id="itemTitle">Coffee Crew</div>
+          <br />
+          <div id="itemDetail">
+            -First Freelance Work. fully functioning E-Commerce platform using stripe for payment processing.
+             <strong>Technologies Used:</strong> <br/>
+             Back-End=[ MongoDb, Mongoose, GraphQl, Apollo, Express.js ]<br/>
+             Front-End=[ React, ApolloClient, MUI, Stripe ]<br/>
+             <small>** actually gonna use this as a template, so i've written the backend Using Sequelize/MySQL as well</small>
+          </div>
+        </div>
+        
+  <div>
+          <img 
+           onClick={(e) => {
+            window.location = "https://coffee-crew.herokuapp.com/";
+          }}
+          id="currency" src={pro} alt="project 1"></img>
+        </div>
+          </div>
+):(
+<>
+<div id="workBox5">
+        <div
           onClick={(e) => {
-            window.location = "https://feed-your-lifestyle.herokuapp.com/";
+            window.location = "https://coffee-crew.herokuapp.com/";
           }}
           id="item"
         >
@@ -143,14 +264,11 @@ React.useEffect(() => {
              <small>** actually gonna use this as a template, so i've written the backend Using Sequelize/MySQL as well</small>
           </div>
         </div>
-        {isDesktop ? (
-  <div>
-          <img id="currency" src={pro} alt="project 1"></img>
         </div>
-):(
-<div></div>
+</>
 )}
-      </div>
+</>
+    
     </>
   );
 };

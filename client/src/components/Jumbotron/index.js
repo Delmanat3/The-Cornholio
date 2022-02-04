@@ -4,6 +4,7 @@ import cool from "../img/cool.jpg";
 import { Work } from "../works";
 
 import LazyLoad from 'react-lazyload';
+import { Copyright } from "../Copyright";
 
 // @lazyload({
 //   height: 200,
@@ -13,7 +14,7 @@ import LazyLoad from 'react-lazyload';
 
 export const Jumbo = () => {
 console.log(window.innerWidth)
-const [isDesktop, setDesktop] = React.useState(window.innerWidth > 1450);
+const [isDesktop, setDesktop] = React.useState(window.innerWidth > 500);
   
 const updateMedia = () => {
   setDesktop(window.innerWidth > 500);
@@ -46,7 +47,7 @@ React.useEffect(() => {
           ):(
               <>
             <h1>
-            Me
+            My Work
             </h1>
                   </>
           )}
@@ -66,6 +67,7 @@ React.useEffect(() => {
       <div id="Bg2" style={{ backgroundImage: `url(${cool})` }}>
         <Work />
       </div>
+      <Copyright/>
       </LazyLoad>
     </>
   );
