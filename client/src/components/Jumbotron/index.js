@@ -1,7 +1,7 @@
 import React from "react";
 import truck from "../img/truck.jpg";
 import cool from "../img/cool.jpg";
-import { Work } from "../works";
+import { Work } from "../works/index1";
 
 import LazyLoad from 'react-lazyload';
 import { Copyright } from "../Copyright";
