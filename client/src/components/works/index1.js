@@ -114,8 +114,7 @@ export const Work = () => {
                 <strong>
                   <div> Technologies Used:</div>
                   </strong>
-                Back-End=[ MongoDb, Mongoose, GraphQl, Apollo, Express.js, Axios
-                ]
+                Back-End=[ MongoDb, Mongoose, GraphQl, Apollo, Express.js, Axios]
                 Front-End=[ React, ApolloClient, MUI ]
               </div>
             </div>
