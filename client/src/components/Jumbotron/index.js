@@ -37,7 +37,9 @@ React.useEffect(() => {
       >
           {isDesktop ?(
                     <h1>
-                    <span>Welcome To</span>
+                    <div
+                    style={{fontSize:"40px"}}
+                    >Welcome To</div>
                     <div className="message">
                       <div className="word1">Nathan</div>
                       <div className="word2">Me</div>
@@ -47,7 +49,7 @@ React.useEffect(() => {
           ):(
               <>
             <h1>
-            My Work
+            A bit about me 
             </h1>
                   </>
           )}

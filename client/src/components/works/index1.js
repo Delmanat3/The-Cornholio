@@ -29,7 +29,7 @@ export const Work = () => {
               <div id="itemTitle">Cosmozcurrency</div>
               <br />
               <div id="itemDetail">
-                <span>
+                <div>
                   A dashboard to monitor cryptocurrency and their shifting
                   values so that you can manage your crypto assets. Our project
                   includes graphs designed to display the top 7 markets total
@@ -37,13 +37,13 @@ export const Work = () => {
                   allows you to choose from the top 20 crypto currencies and
                   compare them. Our site also provides real time news on crypto
                   currency and related stock market information.
-                </span>
+                </div>
                 <br/>
                 <strong>
                   <div> Technologies Used:</div>
                   </strong>
-               <span>Front-End=[ jQuery, Materialize ]</span> <br />
-               <span>API/s=[ CoinGecko ]</span>
+               <div>Front-End=[ jQuery, Materialize ]</div> <br />
+               <div>API/s=[ CoinGecko ]</div>
                 
               </div>
             </div>
@@ -141,7 +141,7 @@ export const Work = () => {
                 <h style={{ color: "white" }}>Cosmozcurrency</h>
               </div>
               <div className="flip-card-back">
-                <span style={{ color: "white" }}>
+                <div style={{ color: "white" }}>
                   A dashboard to monitor cryptocurrency and their shifting
                   values so that you can manage your crypto assets. Our project
                   includes graphs designed to display the top 7 markets total
@@ -149,7 +149,7 @@ export const Work = () => {
                   allows you to choose from the top 20 crypto currencies and
                   compare them. Our site also provides real time news on crypto
                   currency and related stock market information.
-                </span>
+                </div>
                 <br />
                 <strong>
                   <h> TECHS:</h>
@@ -178,11 +178,11 @@ export const Work = () => {
                 </strong>
               </div>
               <div className="flip-card-back">
-                <span style={{ color: "white" }}>
+                <div style={{ color: "white" }}>
                   {" "}
                   -First Freelance Work. fully functioning E-Commerce platform
                   using stripe for payment processing.
-                </span>
+                </div>
                 <br />
                 <strong>
                   <h> TECHS:</h>
@@ -222,12 +222,12 @@ export const Work = () => {
                 </strong>
               </div>
               <div className="flip-card-back">
-                <span style={{ color: "white" }}>
+                <div style={{ color: "white" }}>
                   {" "}
                   -Second collaborative Work A diet app that will recommend
                   recipes based on the users profile. Backend built on SQL,
                   while using HANDLEBARS for the frontend.
-                </span>
+                </div>
                 <br />
                 <strong>
                   <h> TECHS:</h>
@@ -262,7 +262,7 @@ export const Work = () => {
                 </strong>
               </div>
               <div className="flip-card-back">
-                <span style={{ color: "white" }}>
+                <div style={{ color: "white" }}>
                   A dashboard to monitor cryptocurrency and their shifting
                   values so that you can manage your crypto assets. Our project
                   includes graphs designed to display the top 7 markets total
@@ -270,7 +270,7 @@ export const Work = () => {
                   allows you to choose from the top 20 crypto currencies and
                   compare them. Our site also provides real time news on crypto
                   currency and related stock market information.
-                </span>
+                </div>
                 <br />
                 <strong>
                   <h> TECHS:</h>
